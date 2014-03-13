@@ -33,4 +33,4 @@ public string State {get; set; }<BR/>
 }<BR/>
 <BR/>
 <b>With this mapping GenericMapper may already work, and is this way.</b><BR/>
-var dto = GenericMapper.MapObject &lt;User, UserDto&gt; ( entity) ;
+var userDto = GenericMapper.MapObject &lt;User, UserDto&gt; ( user) ;
