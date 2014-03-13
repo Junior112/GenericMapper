@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="43f729a2d6a343fd8497ae817db055ae" Name="Diagram1">
+        <EntityTypeShape EntityType="TestModel.ALBARAN" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel.ALBARAN_X_LINEAS" Width="1.875" PointX="3.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel.ALBARANES" Width="1.5" PointX="0.75" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel.FACTURA" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel.FACTURAS" Width="1.5" PointX="3.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel.FACTURAS_X_LINEAS" Width="2.25" PointX="6.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel.LINEA" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TestModel.PRODUCTO" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="TestModel.FK_ALBARAN_X_LINEAS_ALBARANES" ManuallyRouted="false" />
+        <AssociationConnector Association="TestModel.FK_ALBARAN_X_LINEAS_PRODUCTO" ManuallyRouted="false" />
+        <AssociationConnector Association="TestModel.FK_FACTURAS_X_LINEAS_FACTURAS" ManuallyRouted="false" />
+        <AssociationConnector Association="TestModel.FK_FACTURAS_X_LINEAS_PRODUCTO" ManuallyRouted="false" />
+        <AssociationConnector Association="TestModel.FK_LINEA_PRODUCTO" ManuallyRouted="false" />
+        <AssociationConnector Association="TestModel.ALBARAN_LINEA" ManuallyRouted="false" />
+        <AssociationConnector Association="TestModel.FACTURA_LINEA" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
