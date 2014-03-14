@@ -9,13 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameWorkTest", "Enti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHibernateTest", "NHibernateTest\NHibernateTest.csproj", "{AFE7DAB5-F59B-437D-8B22-45C3681DC35D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeedletailTest", "NeedletailTest\NeedletailTest.csproj", "{D19983F5-D5BF-4F75-AED8-7DEC78AD7F1A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADOTest", "ADOTest\ADOTest.csproj", "{3899B06B-0015-4C87-879D-C4E13558B318}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Underwriting_Hub.DataAccess.DomainObjects", "..\..\..\..\..\..\Desktop\Trabajo\Scio\CPH\CODE\SVNCode\trunk\Underwriting_Hub\Underwriting_Hub.DataAccess.DomainObjects\Underwriting_Hub.DataAccess.DomainObjects.csproj", "{240F546D-CEB0-47F8-9CB7-400F5B494868}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Underwriting_Hub.DataAccess.Repositories", "..\..\..\..\..\..\Desktop\Trabajo\Scio\CPH\CODE\SVNCode\trunk\Underwriting_Hub\Underwriting_Hub.DataAccess.Repositories\Underwriting_Hub.DataAccess.Repositories.csproj", "{26524DF1-C2A9-4CD4-B0B2-AF3F69678F2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,22 +33,10 @@ Global
 		{AFE7DAB5-F59B-437D-8B22-45C3681DC35D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFE7DAB5-F59B-437D-8B22-45C3681DC35D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFE7DAB5-F59B-437D-8B22-45C3681DC35D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D19983F5-D5BF-4F75-AED8-7DEC78AD7F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D19983F5-D5BF-4F75-AED8-7DEC78AD7F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D19983F5-D5BF-4F75-AED8-7DEC78AD7F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D19983F5-D5BF-4F75-AED8-7DEC78AD7F1A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3899B06B-0015-4C87-879D-C4E13558B318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3899B06B-0015-4C87-879D-C4E13558B318}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3899B06B-0015-4C87-879D-C4E13558B318}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3899B06B-0015-4C87-879D-C4E13558B318}.Release|Any CPU.Build.0 = Release|Any CPU
-		{240F546D-CEB0-47F8-9CB7-400F5B494868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{240F546D-CEB0-47F8-9CB7-400F5B494868}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{240F546D-CEB0-47F8-9CB7-400F5B494868}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{240F546D-CEB0-47F8-9CB7-400F5B494868}.Release|Any CPU.Build.0 = Release|Any CPU
-		{26524DF1-C2A9-4CD4-B0B2-AF3F69678F2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{26524DF1-C2A9-4CD4-B0B2-AF3F69678F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{26524DF1-C2A9-4CD4-B0B2-AF3F69678F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{26524DF1-C2A9-4CD4-B0B2-AF3F69678F2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

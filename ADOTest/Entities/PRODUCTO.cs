@@ -17,7 +17,7 @@ namespace ADOTest.Entities
         public virtual List<ALBARAN_X_LINEAS> ALBARANXLINEAS { get; set; }
         public virtual List<FACTURAS_X_LINEAS> FACTURASXLINEAS { get; set; }
 
-        [GenericMapper.Classes.Map("LINEA", nameRelation: "ProductoLinea")]
+        [GenericMapper.Classes.Map("LINEA", true, nameRelation: "ProductoLinea")]
         public virtual List<LINEA> LINEA { get; set; }
     }
 }

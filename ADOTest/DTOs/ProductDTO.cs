@@ -19,7 +19,7 @@ namespace ADOTest.DTOs
         [Map("Costo")]
         public double Cost { get; set; }
 
-        [Map("LINEA", nameRelation: "ProductoLinea")]
+        [Map("LINEA", true, nameRelation: "ProductoLinea")]
         public List<Line3DTO> Lines { get; set; }
 
         #endregion
