@@ -26,3 +26,17 @@ C:\Users\Elfego\Documents\Visual Studio 2012\Projects\SVNGenericMap\trunk\Generi
 C:\Users\Elfego\Documents\Visual Studio 2012\Projects\SVNGenericMap\trunk\GenericMapper\GenericMapper.Test\obj\Debug\GenericMapper.Test.dll
 C:\Users\Elfego\Documents\Visual Studio 2012\Projects\SVNGenericMap\trunk\GenericMapper\GenericMapper.Test\obj\Debug\GenericMapper.Test.pdb
 C:\Users\Elfego\Documents\Visual Studio 2012\Projects\SVNGenericMap\trunk\GenericMapper\GenericMapper.Test\bin\Debug\System.Linq.Dynamic.dll
+C:\Users\Elfego\Desktop\GenericMapper\GenericMapper.Test\bin\Debug\GenericMapper.Test.dll
+C:\Users\Elfego\Desktop\GenericMapper\GenericMapper.Test\bin\Debug\GenericMapper.Test.pdb
+C:\Users\Elfego\Desktop\GenericMapper\GenericMapper.Test\bin\Debug\FizzWare.NBuilder.dll
+C:\Users\Elfego\Desktop\GenericMapper\GenericMapper.Test\bin\Debug\FluentAssertions.dll
+C:\Users\Elfego\Desktop\GenericMapper\GenericMapper.Test\bin\Debug\GenericMapper.dll
+C:\Users\Elfego\Desktop\GenericMapper\GenericMapper.Test\bin\Debug\nunit.framework.dll
+C:\Users\Elfego\Desktop\GenericMapper\GenericMapper.Test\bin\Debug\System.Linq.Dynamic.dll
+C:\Users\Elfego\Desktop\GenericMapper\GenericMapper.Test\bin\Debug\FluentAssertions.pdb
+C:\Users\Elfego\Desktop\GenericMapper\GenericMapper.Test\bin\Debug\FluentAssertions.xml
+C:\Users\Elfego\Desktop\GenericMapper\GenericMapper.Test\bin\Debug\nunit.framework.xml
+C:\Users\Elfego\Desktop\GenericMapper\GenericMapper.Test\obj\Debug\GenericMapper.Test.csprojResolveAssemblyReference.cache
+C:\Users\Elfego\Desktop\GenericMapper\GenericMapper.Test\obj\Debug\GenericMapper.Test.dll
+C:\Users\Elfego\Desktop\GenericMapper\GenericMapper.Test\obj\Debug\GenericMapper.Test.pdb
+C:\Users\Elfego\Desktop\GenericMapper\GenericMapper.Test\bin\Debug\GenericMapper.pdb
