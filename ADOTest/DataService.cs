@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 using System.Collections.Generic;
 namespace ADOTest
 {
-    public class DataServiceSpanish
+    public class DataService
     {
         protected SqlConnection Conexion = new SqlConnection();
         /// <summary>

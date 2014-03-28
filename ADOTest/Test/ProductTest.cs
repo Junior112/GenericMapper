@@ -11,12 +11,15 @@ namespace ADOTest.Test
     public class ProductTest
     {
         [Test]
-        public void NewProduct()
+        public void GetProduct()
         {
-            var service = new DataServiceSpanish();
+            var service = new DataService();
             service.Conectar();
-            var ds = service.ExecuteDataSet("select * from producto where id = 1; Select * from linea where Idproducto = 1;");
+            var ds = service.ExecuteDataSet("select * from producto where id = 1; " +
+                                            "Select * from linea where Idproducto = 1;" +
+                                            "select * from ALBARAN_LINEA where IdLinea in (Select Id from linea where Idproducto = 1);");
             ds.Relations.Add("ProductoLinea", ds.Tables[0].Columns["Id"], ds.Tables[1].Columns["IdProducto"]);
+            ds.Relations.Add("LineaLineaAlbaran", ds.Tables[1].Columns["Id"], ds.Tables[2].Columns["IdLinea"]);
 
             var mapper = new GenericMap();
             var list = mapper.MapListFromDataSet<PRODUCTO>(ds);
@@ -25,9 +28,9 @@ namespace ADOTest.Test
         }
 
         [Test]
-        public void NewProductWithStored()
+        public void GetProductWithStored()
         {
-            var service = new DataServiceSpanish();
+            var service = new DataService();
             service.Conectar();
             var ds = service.ExecuteDataSet("GetProduct", CommandType.StoredProcedure, new Dictionary<string, object> { { "@IdProduct", 1 } });
             ds.Relations.Add("ProductoLinea", ds.Tables[0].Columns["Id"], ds.Tables[1].Columns["IdProducto"]);
@@ -39,11 +42,12 @@ namespace ADOTest.Test
         }
 
         [Test]
-        public void NewLinea()
+        public void GetLinea()
         {
-            var service = new DataServiceSpanish();
+            var service = new DataService();
             service.Conectar();
-            var ds = service.ExecuteDataSet("select * from linea where id = 1; Select * from producto where id in (select idproducto from linea where id = 1);");
+            var ds = service.ExecuteDataSet("select * from linea where id = 1; " +
+                                            "Select * from producto where id in (select idproducto from linea where id = 1);");
             ds.Relations.Add("LineaProducto", ds.Tables[0].Columns["IdProducto"], ds.Tables[1].Columns["Id"]);
 
             var mapper = new GenericMap();
@@ -55,9 +59,9 @@ namespace ADOTest.Test
 
 
         [Test]
-        public void NewLineaDTO()
+        public void GetLineaDTO()
         {
-            var service = new DataServiceSpanish();
+            var service = new DataService();
             service.Conectar();
             var ds = service.ExecuteDataSet("select * from linea where id = 1; Select * from producto where id in (select idproducto from linea where id = 1);");
             ds.Relations.Add("LineaProducto", ds.Tables[0].Columns["IdProducto"], ds.Tables[1].Columns["Id"]);
@@ -73,7 +77,7 @@ namespace ADOTest.Test
         [Test]
         public void NewLinea2DTO()
         {
-            var service = new DataServiceSpanish();
+            var service = new DataService();
             service.Conectar();
             var ds = service.ExecuteDataSet("select * from producto where id = 1; Select * from linea where Idproducto = 1; Select * from ALBARAN_LINEA where idlinea in (Select ID from linea where Idproducto = 1);");
             ds.Relations.Add("ProductoLinea", ds.Tables[0].Columns["Id"], ds.Tables[1].Columns["IdProducto"]);
