@@ -1,5 +1,6 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using ADOTest.DTOs;
 using ADOTest.Entities;
 using GenericMapper.Tools;
@@ -10,6 +11,25 @@ namespace ADOTest.Test
     [TestFixture]
     public class ProductTest
     {
+        [SetUp]
+        public void TestSetUp() 
+        {
+            var executeIntegrationTests = true;
+            try{
+                var builder = new DbConnectionStringBuilder
+                {
+                    ConnectionString = connection.ConnectionString
+                };
+            } catch(ArgumentException ex){
+                executeIntegrationTests = false; // Invalid connection string
+            }
+            
+             if (executeIntegrationTests)
+             {
+                 Assert.Ignore( "Local SQL Express is not setup.  Omitting integration fixture." );
+             }
+        }
+        
         [Test]
         public void GetProduct()
         {
@@ -54,9 +74,7 @@ namespace ADOTest.Test
             var list = mapper.MapListFromDataSet<LINEA>(ds);
             service.Desconectar();
             Assert.Greater(list.Count, 0);
-
         }
-
 
         [Test]
         public void GetLineaDTO()
@@ -70,7 +88,6 @@ namespace ADOTest.Test
             var list = mapper.MapListFromDataSet<Line2DTO>(ds);
             service.Desconectar();
             Assert.Greater(list.Count, 0);
-
         }
 
 
@@ -87,7 +104,6 @@ namespace ADOTest.Test
             var list = mapper.MapListFromDataSet<ProductDTO>(ds);
             service.Desconectar();
             Assert.Greater(list.Count, 0);
-
         }
     }
 }
