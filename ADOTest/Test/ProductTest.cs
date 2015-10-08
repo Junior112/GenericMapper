@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.Common;
 using ADOTest.DTOs;
@@ -19,7 +20,7 @@ namespace ADOTest.Test
             try{
                 var builder = new DbConnectionStringBuilder
                 {
-                    ConnectionString = System.Configuration.ConfigurationManager["Test"].ConnectionString
+                    ConnectionString = ConfigurationManager.ConnectionStrings["Test"].ConnectionString
                 };
             } catch(ArgumentException ex){
                 Console.Error.WriteLine(ex.Message);
