@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
@@ -18,9 +19,10 @@ namespace ADOTest.Test
             try{
                 var builder = new DbConnectionStringBuilder
                 {
-                    ConnectionString = connection.ConnectionString
+                    ConnectionString = System.Configuration.ConfigurationManager["Test"].ConnectionString
                 };
             } catch(ArgumentException ex){
+                Console.Error.WriteLine(ex.Message);
                 executeIntegrationTests = false; // Invalid connection string
             }
             
