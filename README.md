@@ -1,4 +1,5 @@
 #GenericMapper
+[![Build status](https://ci.appveyor.com/api/projects/status/2t19cel8b1s7exu4?svg=true)](https://ci.appveyor.com/project/ernestohs/genericmapper)
 
 ##What is GenericMapper?
 
