@@ -1,12 +1,12 @@
 using System;
-using System.Configuration;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.Common;
 using EntityFrameWorkTest.DTOs;
 using GenericMapper.Interfaces;
-using NUnit.Framework;
 using GenericMapper.Extensions;
 using System.Linq;
-using System.Data.Common;
+using NUnit.Framework;
 
 namespace EntityFrameWorkTest.Test
 {
@@ -21,7 +21,7 @@ namespace EntityFrameWorkTest.Test
             try{
                 var builder = new DbConnectionStringBuilder
                 {
-                    ConnectionString = ConfigurationManager.ConnectionStrings["Test"].ConnectionString
+                    ConnectionString = ConfigurationManager.ConnectionStrings["TestEntities"].ConnectionString
                 };
             } catch(ArgumentException ex){
                 Console.Error.WriteLine(ex.Message);
